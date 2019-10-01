@@ -1,15 +1,14 @@
 # tmp-cip-xilinx-mpsoc
 temporal repository to share locally developed cip tree for mpsoc
 
-This repository is intended to share the latest outcome of the work which was locally 
-done by Cybertrust to experiment to merge MPSoC code to CIP tree.
-The current status is that Cybertrust identified patches (in BSP) to be applied to 
-CIP SLTS4.19 for some use cases.
-Please note that those patches were in BSP, and our next step is to figure out which 
-patches are actually in Mainline tree. In another word, some of the current identified 
-patches may not be in Mainline tree, yet.
+This repository is intended to share the latest outcome of the work which was locally done by Cybertrust to experiment to merge MPSoC code to CIP tree.
+
+The current status is that Cybertrust identified patches (in BSP) to be applied to CIP SLTS4.19 for some use cases.
+
+Please note that those patches were in BSP, and our next step is to figure out which patches are actually in Mainline tree. In another word, some of the current identified patches may not be in Mainline tree, yet.
 
 The following files need to be combined to linux-4.19.56.tar.bz2 .
+```
  linux-4.19.56.tar.bz2.001
  linux-4.19.56.tar.bz2.002
  linux-4.19.56.tar.bz2.003
@@ -17,8 +16,10 @@ The following files need to be combined to linux-4.19.56.tar.bz2 .
  linux-4.19.56.tar.bz2.005
  linux-4.19.56.tar.bz2.006
  linux-4.19.56.tar.bz2.007
+ ```
 
 After expanding linux-4.19.56.tar.bz2, the output of "git status" should be like the following.
+```
 ---------------------------------------------------------
 Changes not staged for commit:
         modified:   Documentation/devicetree/bindings/soc/xilinx/xlnx,vcu.txt
@@ -160,3 +161,5 @@ Untracked Files:
         include/soc/xilinx/
         sound/soc/xilinx/
 ---------------------------------------------------------
+```
+
